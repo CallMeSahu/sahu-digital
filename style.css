@@ -97,7 +97,6 @@ ul.navbar{
 
 .home-container{
     flex-grow: 1;
-    padding: 0.5rem;
 }
 
 .home-img-container{
@@ -145,5 +144,68 @@ ul.navbar{
 }
 
 .shop-now-btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
+.catagory-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 300px;
+}
+
+.catagory-heading{
+   margin: 2rem;
+   margin-bottom: 4rem; 
+   font-size: 1rem;
+}
+
+.box, .catagory-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.box{
+    background-color: var(--black);
+    color: white;
+    border-radius: 0.5rem;
+    height: 5rem;
+    width: 10rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.05);
+}
+
+.footer{
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.icon-bar{
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.icon-bar a{
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.icon-bar a:hover{
+    transform: scale(1.2);
+}
+
