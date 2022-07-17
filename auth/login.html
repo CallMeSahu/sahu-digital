@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahu Digital</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Login | Sahu Digital</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://sahu-ui.vercel.app/components/component.css">
+    <link rel="stylesheet" href="./auth.css">
     <link rel="shortcut icon" href="/images/main-favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -14,7 +15,7 @@
         <ul class="navbar">
             <div class="navbar-main">
                 <div class="navbar-left">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <img src="/images/main-logo.png" alt="">
                     </a>
                 </div>
@@ -26,7 +27,7 @@
                     <li>
                         <div class="badge">
                             <div class="icon cart-badge">
-                                <a href="./wishlist-manage/wishlist.html">
+                                <a href="../wishlist-manage/wishlist.html">
                                     <i class="fa fa-heart-o fa-2x"></i>
                                 <div class="notification-icon flex-center">
                                     <span>0</span>
@@ -38,17 +39,17 @@
                     <li class="nav-cart">
                         <div class="badge">
                             <div class="icon cart-badge">
-                                <a href="./cart-manage/cart.html">
+                                <a href="../cart-manage/cart.html">
                                     <i class="fa fa-shopping-cart fa-2x"></i>
                                 <div class="notification-icon flex-center">
                                     <span>0</span>
                                 </div>
-                                </a>
+                                </a>                                
                             </div>
                         </div>
                     </li>
                     <li>
-                        <a href="./auth/login.html">
+                        <a href="login.html">
                             <div class="badge">
                                 <div class="icon cart-badge">
                                     <i class="fa fa-user "></i>
@@ -61,44 +62,33 @@
         </ul>
     </div>
 
-    <div class="home-container">
-        <div class="home-img-container">
-            <div class="bg-img-container"></div>
-            <div class="home-page-text">
-                <div class="main-text">
-                    <div>
-                        <h1>A market place</h1>
-                        <h1>for all your Digital Needs!</h1>
-                    </div>
-                    <a href="./product-list/product-list.html" class="shop-now-btn">SHOP NOW</a>
-                </div>
+    <div class="auth-container flex-center">
+        <div class="auth-main-container flex-center">
+            <div class="auth-title">
+                <h2 class="text-center">Login</h2>
             </div>
-        </div>
-
-        <div class="catagory-container flex-center">
-            <div class="catagory-heading text-center">
-                <h2>Popular Brands</h2>
-            </div>
-            <div class="catagory-row">
-                <div class="box">
-                    <div class="detail-box text-center">
-                        <h4>Apple</h4>
-                    </div>
+            <div class="auth-main">
+                <div class="auth-email">
+                    <label for="mail">E-Mail Address</label>
+                    <input type="text" placeholder="test@gmail.com" class="input input-text" type="text">
                 </div>
-                <div class="box">
-                    <div class="detail-box text-center">
-                        <h4>Samsung</h4>
-                    </div>
+                <div class="auth-pwd">
+                    <label for="pwd">Password</label>
+                    <input type="password" placeholder="*****" class="input input-password">
                 </div>
-                <div class="box">
-                    <div class="detail-box text-center">
-                        <h4>One Plus</h4>
-                    </div>
+                <div class="auth-checkbox">
+                    <label class="select-input">
+                        <input type="checkbox" class="check-input" value="" name="light">
+                        <span>Remember Me</span>
+                    </label>
+                    <a href="./forget-pwd.html">Forgot Password?</a>
                 </div>
-                <div class="box">
-                    <div class="detail-box text-center">
-                        <h4>Realme</h4>
-                    </div>
+                <div class="btn primary-btn text-center">
+                    <a href="" class="btn link-btn">Login</a>
+                </div>
+                <div class="auth-secondary-btn text-center">
+                    <a href="./signup.html">Create an Account</a>
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
