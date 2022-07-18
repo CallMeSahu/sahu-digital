@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist | Sahu Digital</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://sahu-ui.vercel.app/components/component.css">
+    <link rel="stylesheet" href="./wishlist.css">
+    <link rel="shortcut icon" href="/images/main-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav-header">
+        <ul class="navbar">
+            <div class="navbar-main">
+                <div class="navbar-left">
+                    <a href="../index.html">
+                        <img src="/images/main-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" name="search" id="" class="search-bar" placeholder="Search product, brand & more...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <ul class="navbar-right">
+                    <li>
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../wishlist-manage/wishlist.html">
+                                    <i class="fa fa-heart-o fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-cart">
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../cart-manage/cart.html">
+                                    <i class="fa fa-shopping-cart fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../auth/login.html">
+                            <div class="badge">
+                                <div class="icon cart-badge">
+                                    <i class="fa fa-user "></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div class="wishlist-container">
+        <div class="wishlist-main-container flex-center">
+            <h2>My Wishlist</h2>
+            <div class="wishlist-manage">
+                <div class="wishlist">
+                    <div class="wishlist-item">
+                        <img src="../images/product-img/samsung-galaxy-s22-ultra.jpg" alt="">
+                        <div class="item-info">
+                            <header>
+                                <div class="item-desc">
+                                    <h4 class="card-title-header">Samsung Galaxy S22 Ultra</h4>
+                                    <p class="card-description">Samsung Group</p>
+                                    <div class="price flex-center">
+                                        <p class="discount-price">₹90,950</p>
+                                        <p class="actual-price">₹131,999</p>
+                                        <p class="discount-percent">(31% OFF)</p>
+                                    </div>
+                                    <div class="wishlist-action flex-center">
+                                        <div class="delete-icon">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <button class="btn default move-to-cart">Move to Cart</button>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                    <div class="wishlist-item">
+                        <img src="../images/product-img/realme-gt-2.jpg" alt="">
+                        <div class="item-info">
+                            <header>
+                                <div class="item-desc">
+                                    <h4 class="card-title-header">Realme GT 2</h4>
+                                    <p class="card-description">Realme Mobile Ltd.</p>
+                                    <div class="price">
+                                        <p class="discount-price">₹34,999</p>
+                                        <p class="actual-price">₹39,999</p>
+                                        <p class="discount-percent">(12% OFF)</p>
+                                    </div>
+                                    <div class="wishlist-action flex-center">
+                                        <div class="delete-icon">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                        </div>
+                                        <button class="btn default move-to-cart">Move to Cart</button>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
