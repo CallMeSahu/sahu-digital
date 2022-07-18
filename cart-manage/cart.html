@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart | Sahu Digital</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://sahu-ui.vercel.app/components/component.css">
+    <link rel="stylesheet" href="../cart-manage/cart.css">
+    <link rel="shortcut icon" href="/images/main-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav-header">
+        <ul class="navbar">
+            <div class="navbar-main">
+                <div class="navbar-left">
+                    <a href="../index.html">
+                        <img src="/images/main-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" name="search" id="" class="search-bar" placeholder="Search product, brand & more...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <ul class="navbar-right">
+                    <li>
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../wishlist-manage/wishlist.html">
+                                    <i class="fa fa-heart-o fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-cart">
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../cart-manage/cart.html">
+                                    <i class="fa fa-shopping-cart fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../auth/login.html">
+                            <div class="badge">
+                                <div class="icon cart-badge">
+                                    <i class="fa fa-user "></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div class="cart-container">
+        <div class="cart-main-container flex-center">
+            <h2>My Cart</h2>
+            <div class="cart-manage">
+                <div class="cart-manage-item">
+                    <div class="horizontal-container">
+                        <!-- Horizontal Card -->
+                        <div class="card horizontal-container">
+                            <div class="card-horizontal">
+                                <img class="card-image horizontal-image" src="../images/product-img/apple-iphone-13-pro.jpg" alt=""> 
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3>Apple iPhone 13 Pro</h3>
+                                            <p class="card-description">Apple Inc.</p>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹112,900</p>
+                                        <p class="actual-price">₹119,900</p>
+                                        <p class="discount-percent">(6% OFF)</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <button class="minus">-</button>
+                                        <input type="" class="quantity-count" value="1"/>
+                                        <button class="plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal-btn">
+                                <button class="remove-btn">REMOVE</button>
+                                <button class="wishlist-btn">MOVE TO WISHLIST</button>
+                            </div>
+                        </div>
+                        <!-- Horizontal Card -->
+                        <div class="card horizontal-container">
+                            <div class="card-horizontal">
+                                <img class="card-image horizontal-image" src="../images/product-img/oneplus-10-pro.jpg" alt=""> 
+                                <div class="card-info">
+                                    <div class="card-title">
+                                        <div>
+                                            <h3>OnePlus 10 Pro</h3>
+                                            <p class="card-description">OnePlus Technology Co.</p>
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <p class="discount-price">₹60,999</p>
+                                        <p class="actual-price">₹66,299</p>
+                                        <p class="discount-percent">(10% OFF)</p>
+                                    </div>
+                                    <div class="quantity">
+                                        <button class="minus">-</button>
+                                        <input type="" class="quantity-count" value="1"/>
+                                        <button class="plus">+</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="horizontal-btn">
+                                <button class="remove-btn">REMOVE</button>
+                                <button class="wishlist-btn">MOVE TO WISHLIST</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="price-detail">
+                    <ul class="coupons">
+                        <a href="">
+                            <p>
+                                <i class="fa fa-tag"></i>
+                                Apply Coupons
+                            </p>
+                        </a>
+                        
+                    </ul>
+                    <h4 class="text-center">Price Details</h4>
+
+                    <div class="price-calculate">
+                        <ul>
+                            <li>
+                                <p>Total Price</p>
+                                <p>₹186,199</p>
+                            </li>
+                            <li>
+                                <p>Discount</p>
+                                <p>-₹12,300</p>
+                            </li>
+                            <li>
+                                <p>Coupon Discount</p>
+                                <p>-₹2,000</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <ul class="price-totalAmt">
+                        <h4>Cart Amount</h4>
+                        <h4>₹171,899</h4>
+                    </ul>
+
+                    <p class="save-msg">You saved ₹14,300 on this order</p>
+
+                    <div class="text-center"><a href="" class="btn link-btn">Place Order</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
