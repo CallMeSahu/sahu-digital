@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now | Sahu Digital</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://sahu-ui.vercel.app/components/component.css">
+    <link rel="stylesheet" href="./product-list.css">
+    <link rel="shortcut icon" href="/images/main-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav-header">
+        <ul class="navbar">
+            <div class="navbar-main">
+                <div class="navbar-left">
+                    <a href="index.html">
+                        <img src="/images/main-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" name="search" id="" class="search-bar" placeholder="Search product, brand & more...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <ul class="navbar-right">
+                    <li>
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../wishlist-manage/wishlist.html">
+                                    <i class="fa fa-heart-o fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-cart">
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../cart-manage/cart.html">
+                                    <i class="fa fa-shopping-cart fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../user-profile/user-profile.html">
+                            <div class="badge">
+                                <div class="icon cart-badge">
+                                    <i class="fa fa-user "></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div class="product-main-container">
+        <div class="filter-container trans-off">
+
+            <div class="filter-head">
+                <h4>Filters</h4>
+                <p class="paragraph-medium clr-flt-btn">Clear</p>
+            </div>
+
+            <div class="filter-price">
+                <h4>Price</h4>
+                <div class="flex-gap">
+                    <div class="price-range">
+                        <p class="check-desc">₹25K</p>
+                        <p class="check-desc">₹50K</p>
+                        <p class="check-desc">₹75K+</p>
+                    </div>
+                    <input type="range" class="slider" name="rangeInput" min="25,000" max="75,000">
+                </div>
+            </div>
+
+            <div class="filter-catagory">
+                <h4>Category</h4>
+                <div class="flex-gap">
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">Apple</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">Samsung</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">One Plus</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">Realme</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-rating">
+                <h4>Rating</h4>
+                <div class="flex-gap">
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">4 Stars & Above</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">3 Stars & Above</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">2 Stars & Above</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">1 Star & Above</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-sort">
+                <h4>Sort By</h4>
+                <div class="flex-gap">
+                    <label class="select-input">
+                        <input type="radio" name="sort" id="" class="input-radio" value="" checked>
+                        <span class="check-desc">Price: Low to High</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="sort" id="" class="input-radio" value="">
+                        <span class="check-desc">Price: High to Low</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-list-container">
+            <div class="product-list-header">
+                <h2>All Products</h2>
+                <p class="paragraph-medium">(Showing 16 Products)</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer flex-center">
+        <h4>Made with ❤️ by Siddhartha Sahu</h4>
+        <div class="icon-bar">
+            <a href="https://github.com/CallMeSahu" class="github">
+                <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/siddhartha-sahu/" class="linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/CallMeSahu" class="twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
