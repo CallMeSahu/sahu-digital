@@ -1,0 +1,62 @@
+.single-card-container{
+    margin-top: 2rem;
+}
+
+.single-card{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 3rem 0 0.75rem;
+    flex-wrap: wrap;
+    border-radius: 1rem;
+}
+
+.single-card-left{
+    position: relative;
+}
+
+.card-badge{
+    left: -3.1%;
+}
+
+.single-card-img{
+    width: 24rem;
+    object-fit: contain;
+}
+
+.single-card-right{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.single-card-title-header{
+    font-size: 1.5rem;
+}
+
+.single-card-right .card-description{
+    font-size: 1.1rem;
+}
+
+.star-rating{
+    padding-top: 0.45rem;
+}
+
+.single-card-right .price{
+    font-size: 1.3rem;
+}
+
+.other-info{
+    margin: 0.35rem 0 0.75rem 0;
+}
+
+.other-info h4{
+    margin-bottom: 0.35rem;
+}
+
+.cart-add{
+    background-color: var(--link);
+}
+
+.wishlist-add:hover{
+    
+}
