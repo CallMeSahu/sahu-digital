@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now | Sahu Digital</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://sahu-ui.vercel.app/components/component.css">
+    <link rel="stylesheet" href="./product-list.css">
+    <link rel="shortcut icon" href="/images/main-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav-header">
+        <ul class="navbar">
+            <div class="navbar-main">
+                <div class="navbar-left">
+                    <a href="../index.html">
+                        <img src="/images/main-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" name="search" id="" class="search-bar" placeholder="Search product, brand & more...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <ul class="navbar-right">
+                    <li>
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../wishlist-manage/wishlist.html">
+                                    <i class="fa fa-heart-o fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-cart">
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../cart-manage/cart.html">
+                                    <i class="fa fa-shopping-cart fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../user-profile/user-profile.html">
+                            <div class="badge">
+                                <div class="icon cart-badge">
+                                    <i class="fa fa-user "></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div class="product-main-container">
+        <div class="filter-container trans-off">
+
+            <div class="filter-head">
+                <h4>Filters</h4>
+                <p class="paragraph-medium clr-flt-btn">Clear</p>
+            </div>
+
+            <div class="filter-price">
+                <h4>Price</h4>
+                <div class="flex-gap">
+                    <div class="price-range">
+                        <p class="check-desc">₹25K</p>
+                        <p class="check-desc">₹50K</p>
+                        <p class="check-desc">₹75K+</p>
+                    </div>
+                    <input type="range" class="slider" name="rangeInput" min="25,000" max="75,000">
+                </div>
+            </div>
+
+            <div class="filter-catagory">
+                <h4>Category</h4>
+                <div class="flex-gap">
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">Apple</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">Samsung</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">One Plus</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="checkbox" name="light" id="" class="input-checkbox">
+                        <span class="check-desc">Realme</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-rating">
+                <h4>Rating</h4>
+                <div class="flex-gap">
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">4 Stars & Above</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">3 Stars & Above</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">2 Stars & Above</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="rating" class="input-radio" value="" checked>
+                        <span class="check-desc">1 Star & Above</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-sort">
+                <h4>Sort By</h4>
+                <div class="flex-gap">
+                    <label class="select-input">
+                        <input type="radio" name="sort" id="" class="input-radio" value="" checked>
+                        <span class="check-desc">Price: Low to High</span>
+                    </label>
+                    <label class="select-input">
+                        <input type="radio" name="sort" id="" class="input-radio" value="">
+                        <span class="check-desc">Price: High to Low</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-list-container">
+            <div class="product-list-header">
+                <h2>All Products</h2>
+                <p class="paragraph-medium">(Showing 16 Products)</p>
+            </div>
+            
+            <div class="product-item-container">
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/apple-iphone-13-pro.jpg" alt=""> 
+                    <span class="card-badge">Best Seller</span>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">iPhone 13 Pro</h3>
+                                    <p class="card-description">Apple Inc.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹112,900</p>
+                                <p class="actual-price">₹119,900</p>
+                                <p class="discount-percent">(6% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>    
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/samsung-galaxy-s22-ultra.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Galaxy S22 Ultra</h3>
+                                    <p class="card-description">Samsung Electronics</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹90,950</p>
+                                <p class="actual-price">₹131,999</p>
+                                <p class="discount-percent">(31% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div> 
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/oneplus-10-pro.jpg" alt=""> 
+                    <span class="card-badge">Best Seller</span>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">OnePlus 10 Pro</h3>
+                                    <p class="card-description">OnePlus Technology Co.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹60,999</p>
+                                <p class="actual-price">₹66,299</p>
+                                <p class="discount-percent">(10% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>  
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/realme-gt-2.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Realme GT 2</h3>
+                                    <p class="card-description">Realme Mobile Ltd.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹34,999</p>
+                                <p class="actual-price">₹39,299</p>
+                                <p class="discount-percent">(12% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>    
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/apple-iphone-13-pro-max.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">iPhone 13 Pro Max</h3>
+                                    <p class="card-description">Apple Inc.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹122,900</p>
+                                <p class="actual-price">₹129,900</p>
+                                <p class="discount-percent">(5% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>    
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/samsung-galaxy-s22-plus.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Galaxy S22 Plus</h3>
+                                    <p class="card-description">Samsung Electronics</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹78,999</p>
+                                <p class="actual-price">₹101,999</p>
+                                <p class="discount-percent">(23% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div> 
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/oneplus-10-r.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">OnePlus 10R</h3>
+                                    <p class="card-description">OnePlus Technology Co.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹35,999</p>
+                                <p class="actual-price">₹38,299</p>
+                                <p class="discount-percent">(8% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>  
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/realme-gt-neo-3.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Realme GT Neo 3</h3>
+                                    <p class="card-description">Realme Mobile Ltd.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹35,999</p>
+                                <p class="actual-price">₹39,999</p>
+                                <p class="discount-percent">(10% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>  
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/apple-iphone-13.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">iPhone 13</h3>
+                                    <p class="card-description">Apple Inc.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹69,900</p>
+                                <p class="actual-price">₹79,900</p>
+                                <p class="discount-percent">(13% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>    
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/samsung-galaxy-s22.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Galaxy S22</h3>
+                                    <p class="card-description">Samsung Electronics</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹62,000</p>
+                                <p class="actual-price">₹85,999</p>
+                                <p class="discount-percent">(28% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div> 
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/oneplus-nord-2t.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">One Plus Nord 2T</h3>
+                                    <p class="card-description">OnePlus Technology Co.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹27,999</p>
+                                <p class="actual-price">₹28,999</p>
+                                <p class="discount-percent">(3.5% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>  
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/realme-gt-neo-2.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Realme GT Neo 2</h3>
+                                    <p class="card-description">Realme Mobile Ltd.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹31,999</p>
+                                <p class="actual-price">₹34,2999</p>
+                                <p class="discount-percent">(9% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>   
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/apple-iphone-13-mini.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">iPhone 13 Mini</h3>
+                                    <p class="card-description">Apple Inc.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹68,990</p>
+                                <p class="actual-price">₹69,900</p>
+                                <p class="discount-percent">(1% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>    
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/samsung-galaxy-s21-fe.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Galaxy S21 FE</h3>
+                                    <p class="card-description">Samsung Electronics</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹49,999</p>
+                                <p class="actual-price">₹74,999</p>
+                                <p class="discount-percent">(33% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div> 
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/oneplus-nord-ce2.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">One Plus Nord CE 2</h3>
+                                    <p class="card-description">OnePlus Technology Co.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹24,999</p>
+                                <p class="actual-price">₹23,999</p>
+                                <p class="discount-percent">(4% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>  
+
+                <div class="card">
+                    <img class="card-image" src="../images/product-img/realme-9-pro-plus.jpg" alt=""> 
+                        <div class="card-info">
+                            <div class="card-title">
+                                <div>
+                                    <h3 class="card-title-header">Realme 9 Pro Plus</h3>
+                                    <p class="card-description">Realme Mobile Ltd.</p>
+                                </div>
+                                <i class="fa fa-heart-o wishlist-icon"></i>
+                            </div>
+                            <div class="price">
+                                <p class="discount-price">₹24,990</p>
+                                <p class="actual-price">₹29,299</p>
+                                <p class="discount-percent">(17% OFF)</p>
+                            </div>
+                        </div>
+                        <button class="btn default add-cart">Add to Cart</button>
+                </div>    
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
