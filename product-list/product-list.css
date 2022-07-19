@@ -34,12 +34,14 @@
     background-color: var(--white);
 } 
 
-.responsive-grid{
+.product-item-container{
     display: flex;
-    gap: 1rem;
+    gap: 1.2rem;
+    row-gap: 2.5rem;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .filter-container>div>h4{
     margin-bottom: 1rem;
@@ -68,6 +70,11 @@
 
 .price-range{
     color: var(--default);
+}
+
+.add-cart{
+    background-color: var(--link);
+    font-weight: 100;
 }
 
 
