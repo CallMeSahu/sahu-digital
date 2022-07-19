@@ -34,6 +34,13 @@
     background-color: var(--white);
 } 
 
+.responsive-grid{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .filter-container>div>h4{
     margin-bottom: 1rem;
 }
