@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Sahu Digital</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://sahu-ui.vercel.app/components/component.css">
+    <link rel="stylesheet" href="./user-profile.css">
+    <link rel="shortcut icon" href="/images/main-favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="nav-header">
+        <ul class="navbar">
+            <div class="navbar-main">
+                <div class="navbar-left">
+                    <a href="../index.html">
+                        <img src="/images/main-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="search-container">
+                    <input type="text" name="search" id="" class="search-bar" placeholder="Search product, brand & more...">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <ul class="navbar-right">
+                    <li>
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../wishlist-manage/wishlist.html">
+                                    <i class="fa fa-heart-o fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-cart">
+                        <div class="badge">
+                            <div class="icon cart-badge">
+                                <a href="../cart-manage/cart.html">
+                                    <i class="fa fa-shopping-cart fa-2x"></i>
+                                <div class="notification-icon flex-center">
+                                    <span>0</span>
+                                </div>
+                                </a>                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../user-profile/user-profile.html">
+                            <div class="badge">
+                                <div class="icon cart-badge">
+                                    <i class="fa fa-user "></i>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-main-container">
+            <h2>My Profile</h2>
+            <div class="profile-main">
+                <div class="tabs">
+                    <input type="radio" name="tabs" id="profile" checked>
+                    <label for="profile">Profile</label>
+                    <div class="tab">
+                        <div class="profile-details">
+                            <h3 class="details-header">Profile Details</h3>
+
+                            <div class="profile-detail-main">
+                                <div>
+                                    <p class="paragraph-medium profile-heading">Full Name:</p>
+                                    <p class="paragraph-medium profile-heading">E-Mail:</p>
+                                </div>
+                                <div>
+                                    <p class="paragraph-medium">Admin</p>
+                                    <p class="paragraph-medium">test@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="radio" name="tabs" id="address">
+                    <label for="address">Address</label>
+                    <div class="tab">
+                        <h3 class="details-header">My Addresses</h3>
+                        <div class="address-container">
+                            <p class="paragraph-medium profile-heading">Siddhartha Sahu</p>
+                            <p class="paragraph-small">
+                                R14/6D, New Navy Nagar,
+                            </p>
+                            <p class="paragraph-small">Colaba, Mumbai 400005</p>
+                            <p class="paragraph-small">Mobile Number: 8317691805</p>
+                            <div class="address-btn">
+                                <button class="btn outlined-default">Edit</button>
+                                <button class="btn outlined-danger">Delete</button>
+                            </div>
+                        </div>
+
+                        <div class="address-container">
+                            <p class="paragraph-medium profile-heading">Siddhartha Sahu</p>
+                            <p class="paragraph-small">
+                                R14/6D, New Navy Nagar,
+                            </p>
+                            <p class="paragraph-small">Colaba, Mumbai 400005</p>
+                            <p class="paragraph-small">Mobile Number: 8317691805</p>
+                            <div class="address-btn">
+                                <button class="btn outlined-default">Edit</button>
+                                <button class="btn outlined-danger">Delete</button>
+                            </div>
+                        </div>
+
+                        <button class="btn default add-address">+ Add New Address</button>
+                    </div>
+
+                    <input type="radio" name="tabs" id="tabthree">
+                    <label for="tabthree">Settings</label>
+                    <div class="tab">
+                        <h3 class="details-header">Account Settings</h3>
+                        <button class="btn danger setting-logout">Log Out</button>
+                    </div>
+
+                    <div class="address-form-container">
+                        <form class="address-form">
+                            <h4>Add New Address</h4>
+                            <div class="form-input">
+                                <input type="text" placeholder="Enter your Name" class="input input-text address-form-input">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder="Enter Address Line 1" class="input input-text address-form-input">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" placeholder="Enter Address Line 2" class="input input-text address-form-input">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" maxlength="6" placeholder="Enter Pincode" class="input input-text address-form-input">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" maxlength="10" placeholder="Enter Mobile Number" class="input input-text address-form-input">
+                            </div>
+                            <div class="address-form-btn">
+                                <button class="btn link-btn address-save">Save</button>
+                                <button class="btn outlined-danger address-cancel">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./address-manage.js"></script>
+</body>
+</html>
