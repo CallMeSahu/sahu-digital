@@ -1,7 +1,7 @@
 <div align="center">
 
    <a href="https://sahudigital.vercel.app/">
-        <img src="./images/main-logo"  alt="" /> 
+        <img src="/images/main-logo.png"  alt="" /> 
    </a>
 
   E-Commerce website for Electronics.
