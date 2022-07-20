@@ -87,5 +87,39 @@
 
 .address-form-container{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    margin-top: 4rem;
+    transition: background ease 0.3s;
+}
+
+.address-form-input{
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+    cursor: text;
+    width: 367px;
+}
+
+.address-form, .address-form .form-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.address-form{
+    padding: 1rem;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+
+.address-form-btn .btn{
+    font-size: 1rem;
 }
 
